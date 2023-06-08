@@ -1,4 +1,28 @@
-// ### Body Copy
-// - Font size: 18px
+@font-face {
+  font-family: DMSans_regular;
+  src: url(../build/assets/fonts/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: DMSans_bold;
+  src: url(../build/assets/fonts/DMSans-Bold.ttf);
+}
 
-// - Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+body {
+  min-height: 100vh;
+  font-size: 18px;
+  hyphens: manual;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+span,
+small em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
