@@ -1,0 +1,13 @@
+@mixin flex($aling: center, $justify: center, $direction: column, $gap: 2rem) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $aling;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin media-break($media: max-width, $break: 480px) {
+  @media screen and ($media: $break) {
+    @content;
+  }
+}
