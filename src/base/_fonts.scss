@@ -1,28 +1,58 @@
+@use "../abtract/variables" as colors_bg;
 @font-face {
   font-family: DMSans_regular;
-  src: url(../build/assets/fonts/DMSans-Regular.ttf);
+  src: url(../assets/fonts/DMSans-Regular.ttf);
 }
 @font-face {
   font-family: DMSans_bold;
-  src: url(../build/assets/fonts/DMSans-Bold.ttf);
+  src: url(../assets/fonts/DMSans-Bold.ttf);
 }
 
 body {
   min-height: 100vh;
   font-size: 18px;
+  font-family: DMSans_regular;
   hyphens: manual;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: colors_bg.$very-pale-orange;
 }
 
-h1,
+h1 {
+  letter-spacing: 0.02em;
+  font-size: colors_bg.$md;
+  font-weight: 100;
+  color: colors_bg.$cream;
+}
+
+span {
+  font-family: DMSans_bold;
+  font-size: colors_bg.$lg;
+  color: colors_bg.$very-pale-orange;
+}
+
 h2,
-span,
-small em {
-  font-size: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  text-decoration: none;
-  color: inherit;
+em,
+small {
+  font-family: DMSans_bold;
+  color: colors_bg.$dark-brown;
+  font-style: normal;
+}
+
+h2,
+em {
+  font-size: colors_bg.$lg;
+  font-weight: 900;
+}
+
+b,
+li {
+  font-size: colors_bg.$rm;
+  color: colors_bg.$medium-brown;
+  font-weight: 100;
+}
+
+li {
+  font-size: colors_bg.$sm;
 }
