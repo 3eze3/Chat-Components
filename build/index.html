@@ -13,33 +13,46 @@
     <title>Expenses chart component</title>
   </head>
   <body>
-    <!--  -->
-    <h1>My balance</h1>
-    <span>$921.48</span>
-    <!--  -->
-    <h2>Spending - Last 7 days</h2>
-    <!--  -->
-    <li>mon</li>
-    <!--  -->
-    <li>tue</li>
-    <!--  -->
-    <li>wed</li>
-    <!--  -->
-    <li>thu</li>
-    <!--  -->
-    <li>fri</li>
-    <!--  -->
-    <li>sat</li>
-    <!--  -->
-    <li>sun</li>
-    <!--  -->
-    <b>Total this month</b>
-    <!--  -->
-    <em>$478.33</em>
-    <!--  -->
-    <small>+2.4%</small>
-    <!--  -->
-    <b> from last month </b>
-    <!--  -->
+    <main class="card">
+      <header class="card__head">
+        <div>
+          <h1 class="card__title">My balance</h1>
+          <strong class="card__total" aria-label="Current balance price">
+            $921.48
+          </strong>
+        </div>
+        <!-- <img src="assets/images/logo.svg" alt="" /> -->
+      </header>
+      <!--  -->
+      <section class="card__content">
+        <div class="card__wrapper">
+          <h2 class="card__spending">Spending - Last 7 days</h2>
+          <!-- estadisticas grafico  -->
+          <div class="card__estadisticas">
+            <ol class="card__weekend">
+              <li class="card__day">tue</li>
+              <li class="card__day">wed</li>
+              <li class="card__day">thu</li>
+              <li class="card__day">fri</li>
+              <li class="card__day">sat</li>
+              <li class="card__day">sun</li>
+            </ol>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card__summary">
+          <div class="card__">
+            <span class="card__totalMonth">Total this month</span>
+            <span class="card__" aria-label="Month balance price">$478.33</span>
+          </div>
+          <!-- / -->
+          <div class="card__">
+            <small class="card__percenten"> +2.4%</small>
+            <span class="card__totalMonth"> from last month </span>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+    </main>
   </body>
 </html>
