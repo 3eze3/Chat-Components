@@ -1,0 +1,6 @@
+@use "../abtract/variables" as colors_bg;
+.card__content {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+}
