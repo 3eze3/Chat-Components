@@ -16,7 +16,7 @@ body {
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: colors_bg.$very-pale-orange;
+  background-color: colors_bg.$cream;
 }
 
 h1 {
@@ -46,7 +46,7 @@ span {
   font-weight: 900;
 }
 
-.card__totalMonth,
+.content__totalMonth,
 li {
   font-size: colors_bg.$rm;
   color: colors_bg.$medium-brown;
