@@ -8,8 +8,8 @@
   margin-bottom: 1.5rem;
   @include layout.flex($justify: space-between, $direction: row, $gap: 0);
   border-radius: 0.5rem;
-  background-image: colors_bg.$soft-red;
-  // background-color: colors_bg.$soft-red;
+  // background-image: colors_bg.$soft-red;
+  background-color: colors_bg.$soft-red;
   // Poner en varible el bx shadow
   // box-shadow: colors_bg.$shadow-soft-red;
   &__logo {
