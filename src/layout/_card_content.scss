@@ -1,6 +1,36 @@
 @use "../abtract/variables" as colors_bg;
-.card__content {
+@use "../abtract/mixin" as layout;
+.content {
   background-color: #fff;
   border-radius: 0.5rem;
   padding: 1.5rem 1rem;
+  &__estadisticas {
+    min-height: 13rem;
+    padding: 0.5rem 0.5rem 1.75rem 0.5rem;
+    margin-top: 2rem;
+    @include layout.flex($aling: flex-start, $justify: space-between, $gap: 0);
+    border-bottom: solid red 1px;
+  }
+
+  &__grafics {
+    width: 100%;
+    height: 12rem;
+  }
+
+  &__weekend {
+    width: 100%;
+    @include layout.flex($justify: space-between, $direction: row, $gap: 0);
+  }
+  &__summary {
+    margin-top: 2.6rem;
+    @include layout.flex($justify: space-between, $direction: row, $gap: 0);
+  }
+  &__totalMonth {
+    font-size: 0.75em;
+  }
+  &__information {
+    width: 60%;
+    @include layout.flex($aling: flex-end, $gap: 0);
+    align-self: flex-end;
+  }
 }
