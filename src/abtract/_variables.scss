@@ -1,15 +1,23 @@
 // -------------- Primary --------------
-// $soft-red: linear-gradient(150deg, hsl(10, 79%, 65%) 40%, hsl(0, 9%, 69%) 65%);
-$soft-red: hsl(10, 79%, 65%);
 $cyan: hsl(186, 34%, 60%);
+$soft-green: rgb(46, 79, 79);
 // --------------  Neutral --------------
-$dark-brown: hsl(25, 47%, 15%);
+// $dark-brown: hsl(25, 47%, 15%);
+$dark-brown: hsl(180, 32%, 16%);
 $medium-brown: hsl(28, 10%, 53%);
 $cream: hsl(27, 66%, 92%);
 $very-pale-orange: hsl(33, 100%, 98%);
+$degrant-bg: linear-gradient(
+  45deg,
+  #2c3333 4%,
+  #536565 5%,
+  #2c3333 20% 78%,
+  #0f3b3bb9 95%,
+  #2c3333 97%
+);
 // --------------  Box shadow --------------
-// $shadow-soft-red: 0.22rem 0.22rem 0.44rem hsla(0, 8%, 75%, 0.378) inset,
-//   -0.22rem -0.22rem 0.64rem hsla(10, 80%, 64%, 0.375) inset;
+$shadow-soft-red: 0.22rem 0.22rem 0.44rem rgb(68, 118, 118) inset,
+  -0.22rem -0.22rem 0.5rem hsla(210, 100%, 4%, 0.846) inset;
 // --------------  Font size --------------
 $lg: 1.5em;
 $rm: 1em;
