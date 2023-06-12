@@ -16,9 +16,8 @@ body {
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: colors_bg.$cream;
+  background: colors_bg.$degrant-bg;
 }
-
 h1 {
   letter-spacing: 0.02em;
   font-size: colors_bg.$md;
