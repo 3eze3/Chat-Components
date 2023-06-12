@@ -1,7 +1,7 @@
 @use "../abtract/variables" as colors_bg;
 @use "../abtract/mixin" as layout;
 .content {
-  background-color: #fff;
+  background-color: colors_bg.$very-pale-cyan;
   border-radius: 0.5rem;
   padding: 1.5rem 1rem;
   &__estadisticas {
@@ -9,7 +9,7 @@
     padding: 0.5rem 0.5rem 1.75rem 0.5rem;
     margin-top: 2rem;
     @include layout.flex($aling: flex-start, $justify: space-between, $gap: 0);
-    border-bottom: solid red 1px;
+    border-bottom: solid 1px #0002;
   }
 
   &__grafics {
