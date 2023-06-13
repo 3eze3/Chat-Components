@@ -29,19 +29,45 @@
       <section class="card__content content">
         <div class="content__wrapper">
           <h2 class="content__spending">Spending - Last 7 days</h2>
-          <div class="content__estadisticas">
-            <div class="content__grafics"></div>
-            <ol class="content__weekend">
-              <li class="content__day">mon</li>
-              <li class="content__day">tue</li>
-              <li class="content__day">wed</li>
-              <li class="content__day">thu</li>
-              <li class="content__day">fri</li>
-              <li class="content__day">sat</li>
-              <li class="content__day">sun</li>
-            </ol>
-          </div>
         </div>
+        <div class="content__container">
+          <div
+            class="content__chart"
+            role="presentation"
+            aria-label="Statistics">
+            <div
+              class="content__bar content__bar--mon"
+              aria-label="monday: 80%"></div>
+            <div
+              class="content__bar content__bar--tue"
+              aria-label="tuesday: 50%"></div>
+            <div
+              class="content__bar content__bar--wen"
+              aria-label="wedensday: 70%"></div>
+            <div
+              class="content__bar content__bar--thu"
+              aria-label="thusday: 90%"></div>
+            <div
+              class="content__bar content__bar--fri"
+              aria-label="friday: 60%"></div>
+            <div
+              class="content__bar content__bar--sat"
+              aria-label="saturday: 30%"></div>
+            <div
+              class="content__bar content__bar--sun"
+              aria-label="sunday: 40%"></div>
+          </div>
+          <ul class="content__days">
+            <li class="content__item">mon</li>
+            <li class="content__item">tue</li>
+            <li class="content__item">wed</li>
+            <li class="content__item">thu</li>
+            <li class="content__item">fri</li>
+            <li class="content__item">sat</li>
+            <li class="content__item">sun</li>
+          </ul>
+        </div>
+        <hr class="content__divider" />
         <div class="content__summary">
           <div class="content__wrapper">
             <span class="content__totalMonth">Total this month</span>
