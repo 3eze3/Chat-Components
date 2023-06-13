@@ -4,33 +4,76 @@
   background-color: colors_bg.$very-pale-cyan;
   border-radius: 0.5rem;
   padding: 1.5rem 1rem;
-  &__estadisticas {
-    min-height: 13rem;
-    padding: 0.5rem 0.5rem 1.75rem 0.5rem;
-    margin-top: 2rem;
-    @include layout.flex($aling: flex-start, $justify: space-between, $gap: 0);
-    border-bottom: solid 1px #0002;
-  }
-
-  &__grafics {
-    width: 100%;
-    height: 12rem;
-  }
-
-  &__weekend {
-    width: 100%;
-    @include layout.flex($justify: space-between, $direction: row, $gap: 0);
-  }
   &__summary {
     margin-top: 2.6rem;
     @include layout.flex($justify: space-between, $direction: row, $gap: 0);
   }
+  &__container {
+    width: 100%;
+    height: 15rem;
+  }
+  &__chart {
+    width: 100%;
+    height: 100%;
+    @include layout.flex(
+      $aling: flex-end,
+      $justify: space-between,
+      $direction: row,
+      $gap: 0
+    );
+    margin-bottom: 0.5rem;
+  }
+
+  &__bar {
+    width: 2.15rem;
+    border-radius: 0.2rem;
+    // Cambiar de colores
+    // background-color: red;
+    outline: solid red 1px;
+    transition: height 1s ease 0.15s;
+    &:hover {
+      height: 95%;
+    }
+    &--mon {
+      height: 22%;
+      transition: height 1.2s ease 0.15s;
+    }
+    &--tue {
+      height: 50%;
+    }
+    &--wen {
+      height: 75%;
+    }
+    &--thu {
+      height: 43%;
+    }
+    &--fri {
+      height: 35%;
+    }
+    &--sat {
+      height: 64%;
+    }
+    &--sun {
+      height: 39%;
+    }
+  }
+  &__days {
+    @include layout.flex($justify: space-between, $direction: row, $gap: 0);
+    padding-right: 0.4rem;
+  }
   &__totalMonth {
     font-size: 0.75em;
   }
+
   &__information {
-    width: 60%;
+    width: 50%;
     @include layout.flex($aling: flex-end, $gap: 0);
     align-self: flex-end;
+  }
+  &__divider {
+    width: 100%;
+    height: 1px;
+    margin-top: 2.75rem;
+    background-color: rgba(4, 3, 67, 0.198);
   }
 }
