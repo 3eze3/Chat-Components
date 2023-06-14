@@ -17,6 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: colors_bg.$degrant-bg;
+  overflow: hidden;
 }
 h1 {
   letter-spacing: 0.02em;
