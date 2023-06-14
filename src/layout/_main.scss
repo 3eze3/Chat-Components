@@ -1,5 +1,10 @@
+@use "../abtract/mixin" as layout;
 .card {
   width: 100%;
   min-height: 100dvh;
   padding: 5rem 1.25rem;
+  @include layout.media-break() {
+    margin-inline: auto;
+    width: 34rem;
+  }
 }
