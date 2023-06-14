@@ -2,15 +2,15 @@
 @use "../abtract/mixin" as layout;
 .content {
   background-color: colors_bg.$very-pale-cyan;
-  border-radius: 0.5rem;
-  padding: 1.5rem 1rem;
+  border-radius: 8px;
+  padding: 24px 16px;
   &__summary {
-    margin-top: 2.6rem;
+    margin-top: 41.6px;
     @include layout.flex($justify: space-between, $direction: row, $gap: 0);
   }
   &__container {
     width: 100%;
-    height: 15rem;
+    height: 240px;
   }
   &__chart {
     width: 100%;
@@ -21,18 +21,23 @@
       $direction: row,
       $gap: 0
     );
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
   }
 
   &__bar {
-    width: 2.15rem;
-    border-radius: 0.2rem;
-    // Cambiar de colores
-    // background-color: red;
-    outline: solid red 1px;
-    transition: height 1s ease 0.15s;
+    width: 2.5rem;
+    border-radius: 3.2px;
+    // background-image: linear-gradient(#87caf185 20%, rgba(3, 53, 62, 0.727));
+    background-image: linear-gradient(
+      colors_bg.$soft-green 20%,
+      colors_bg.$very-pale-cyan
+    );
+    background-size: 100% 100%;
+    transition: height 1s ease 0.15s, background-size 1.2s ease 0.15s;
     &:hover {
       height: 95%;
+      background-size: 100% 240%;
+      transition: height 1s ease 0.15s, background-size 1.2s ease 0.15s;
     }
     &--mon {
       height: 22%;
@@ -43,6 +48,11 @@
     }
     &--wen {
       height: 75%;
+      background-image: linear-gradient(
+        #547498b7 10%,
+        #a4bac7 35% 80%,
+        rgba(65, 101, 108, 0.727) 90%
+      );
     }
     &--thu {
       height: 43%;
@@ -59,7 +69,7 @@
   }
   &__days {
     @include layout.flex($justify: space-between, $direction: row, $gap: 0);
-    padding-right: 0.4rem;
+    padding-right: 6.4px;
   }
   &__totalMonth {
     font-size: 0.75em;
@@ -72,8 +82,12 @@
   }
   &__divider {
     width: 100%;
-    height: 1px;
-    margin-top: 2.75rem;
+    height: 0.0625rem;
+    margin-top: 44px;
     background-color: rgba(4, 3, 67, 0.198);
+  }
+
+  @include layout.media-break() {
+    padding-inline: 36px;
   }
 }
