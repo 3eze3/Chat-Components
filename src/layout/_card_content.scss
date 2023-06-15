@@ -13,6 +13,7 @@
     height: 240px;
   }
   &__chart {
+    position: relative;
     width: 100%;
     height: 100%;
     @include layout.flex(
@@ -33,8 +34,9 @@
     );
     background-size: 100% 100%;
     transition: height 1s ease 0.15s, background-size 1.2s ease 0.15s;
+    cursor: pointer;
     &:hover {
-      height: 95%;
+      height: 76%;
       background-size: 100% 240%;
       transition: height 1s ease 0.15s, background-size 1.2s ease 0.15s;
     }
@@ -66,6 +68,64 @@
       height: 39%;
     }
   }
+  &__box {
+    width: 4rem;
+    position: absolute;
+    padding: 0.2rem;
+    top: 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    &--mon {
+      left: -0.7rem;
+      @include layout.media-break() {
+        left: -0.5rem;
+      }
+    }
+    &--tue {
+      left: 2.95rem;
+      @include layout.media-break() {
+        left: 3.15rem;
+      }
+    }
+    &--wen {
+      left: 6.6rem;
+      @include layout.media-break() {
+        left: 7.15rem;
+      }
+    }
+    &--thu {
+      left: 10rem;
+      @include layout.media-break() {
+        left: 11rem;
+      }
+    }
+    &--fri {
+      left: 13.5rem;
+      @include layout.media-break() {
+        left: 15rem;
+      }
+    }
+    &--sat {
+      left: 17.1rem;
+      @include layout.media-break() {
+        left: 19.15rem;
+      }
+    }
+    &--sun {
+      left: 20.85rem;
+      @include layout.media-break() {
+        left: 23rem;
+      }
+    }
+  }
+
+  &__amount {
+    font-size: 0.8em;
+    color: #fff;
+  }
   &__days {
     @include layout.flex($justify: space-between, $direction: row, $gap: 0);
     padding-right: 6.4px;
@@ -89,4 +149,8 @@
   @include layout.media-break() {
     padding-inline: 36px;
   }
+}
+.active {
+  opacity: 1;
+  transition: 0.5s ease-in 0.6s;
 }
